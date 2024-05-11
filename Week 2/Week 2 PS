@@ -1,0 +1,21 @@
+Problem Statement:
+
+Extend the Bank Account class (created in the last assignment) to create a subclass Savings Account with an additional feature of calculating interest. 
+Implement a method calculate Interest() to calculate interest on the current balance using a fixed interest rate (e.g., 3%). 
+Make sure to invoke the parent class constructor using the super keyword in this child class constructor.
+
+Sample Test Cases:
+
+SavingsAccount savingsAccount = new SavingsAccount("1234567890", "Jane Smith");
+savingsAccount.deposit(1000);
+savingsAccount.calculateInterest();
+System.out.println(savingsAccount.getBalance()); // Expected output: 1030.0
+
+Explanation:
+
+Create a subclass Savings Account that inherits from Bank Account.
+Add a method calculate Interest() to calculate interest and update the balance accordingly based on a fixed interest rate.
+
+P.S:
+Make sure to follow the proper naming conventions and abide by the question. (It is observed that many of you haven’t followed in the last assignment.) 
+Submit the solution consisting of the Bank Account class & Savings Account class.
