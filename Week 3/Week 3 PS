@@ -1,0 +1,19 @@
+Problem Statement:
+
+Extend the BankAccount class to include different types of accounts such as CurrentAccount and SavingsAccount. 
+Implement a method calculateInterest() for SavingsAccount and a method deductPenalty() for CurrentAccount. 
+Ensure proper overriding of methods for each account type.
+
+Sample Test Cases:
+BankAccount currentAccount = new CurrentAccount("1234567890", "John Doe");
+currentAccount.deposit(1000);
+((CurrentAccount) currentAccount).deductPenalty();  // PENALTY_AMOUNT = 10.0 (constant)
+System.out.println(currentAccount.getBalance()); // Expected output: 990.0
+
+Explanation:
+Create subclasses CurrentAccount and SavingsAccount that inherit from BankAccount.
+Override methods calculateInterest() in SavingsAccount to calculate interest and deductPenalty() in CurrentAccount to deduct a penalty.
+
+P.S:
+Make sure to follow the proper naming conventions and abide by the instructions only what is mentioned in the question. 
+Submit the solution consisting of the BankAccount class, CurrentAccount class & SavingsAccount class.
