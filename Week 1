@@ -1,0 +1,29 @@
+Week 1: Class & Object Concepts
+
+
+Problem Statement:
+Create a Java class named BankAccount to represent a basic bank account. It should
+have private instance variables for account number (String), account holder
+name (String), balance (double), and public methods to deposit, withdraw, and
+display balance (use getter).
+
+Implement the appropriate constructor implementation and the default value of balance is 0.0.
+
+
+Sample Test Case:BankAccount account = new BankAccount("1234567890", "John Doe");
+
+account.deposit(1000);
+account.withdraw(500);
+
+System.out.println(account.getBalance());
+// Expected output: 500.0
+
+System.out.println("Insufficient funds"); // If incase of excess
+withdrawal
+
+
+Explanation:
+
+Create a class BankAccount with instance variables accountNumber, accountHolderName, and balance.
+Implement methods, void deposit(double amount) and void withdraw(double amount) to modify the balance accordingly.
+Provide a method getBalance() to retrieve the current balance.
