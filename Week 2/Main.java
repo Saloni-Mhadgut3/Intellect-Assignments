@@ -9,11 +9,11 @@ class BankAccount{
         this.balance = 0.0;
     }
 
-    void deposit(double amount){
+    public void deposit(double amount){
         balance +=amount;
     }
 
-    void withdraw(double amount){
+    public void withdraw(double amount){
         if(balance < amount){
             System.out.println("Insufficient Balance");
         }
